@@ -35,4 +35,7 @@ public class PersonDTO {
 
     @Valid
     private List<PhoneDTO> phones;
+
+    @Valid
+    private List<EmailDTO> emails;
 }

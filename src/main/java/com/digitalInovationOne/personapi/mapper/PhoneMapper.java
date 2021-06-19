@@ -13,5 +13,5 @@ public interface PhoneMapper {
 
     Phone toModel(PhoneDTO phoneDTO);
 
-    PhoneDTO toDTO(Phone person);
+    PhoneDTO toDTO(Phone phone);
 }

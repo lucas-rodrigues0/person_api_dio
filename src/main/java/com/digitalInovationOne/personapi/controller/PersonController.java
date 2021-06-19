@@ -3,6 +3,7 @@ package com.digitalInovationOne.personapi.controller;
 import com.digitalInovationOne.personapi.dto.request.PersonDTO;
 import com.digitalInovationOne.personapi.dto.response.MessageResponseDTO;
 import com.digitalInovationOne.personapi.exception.PersonNotFoundException;
+import com.digitalInovationOne.personapi.exception.PhoneNotFoundException;
 import com.digitalInovationOne.personapi.service.PersonService;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,7 +44,7 @@ public class PersonController {
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void deleteById(@PathVariable long id) throws PersonNotFoundException {
-        personService.delete(id);
+    public void deleteById(@PathVariable long id) throws PersonNotFoundException, PhoneNotFoundException {
+        personService.deletePerson(id);
     }
 }

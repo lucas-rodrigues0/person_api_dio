@@ -25,4 +25,10 @@ public class Phone {
 
     @Column(nullable = false)
     private String number;
+
+    @ManyToOne
+    @JoinTable(name = "personID_phoneID",
+            joinColumns={@JoinColumn(name = "phoneID")},
+            inverseJoinColumns={@JoinColumn(name = "personID")})
+    private Person person;
 }

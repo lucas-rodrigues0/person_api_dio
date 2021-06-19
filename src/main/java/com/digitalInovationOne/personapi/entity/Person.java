@@ -1,9 +1,12 @@
 package com.digitalInovationOne.personapi.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -31,6 +34,11 @@ public class Person {
 
     private LocalDate birthDate;
 
-    @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
+    @OneToMany(cascade = CascadeType.ALL)
+    @Fetch(FetchMode.JOIN)
+    @JoinTable(name = "personID_phoneID",
+            joinColumns={@JoinColumn(name = "personID")},
+            inverseJoinColumns={@JoinColumn(name = "phoneID")})
+    @JsonIgnore
     private List<Phone> phones;
 }

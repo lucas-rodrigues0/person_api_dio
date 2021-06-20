@@ -18,7 +18,7 @@ para o gerenciamento dos dados de pessoas.
  - phones - List [ type - STRING, number - STRING ];
  - emails- List [ emailAddress - STRING ];
 
-&nbsp;&nbsp;As funcionalidade são:
+&nbsp;&nbsp;As funcionalidades são:
  - GET /api/v1/person - lista todas as 'Person';
  - GET /api/v1/person/:id - lista a 'Person' pelo id;
  - POST /api/v1/person - Cria uma 'Person';
@@ -29,7 +29,7 @@ para o gerenciamento dos dados de pessoas.
 &nbsp;&nbsp;Para as entidades Phone e Email temos os atributos descritos em Person. Phone(type, number), Email(emailAddress), além de seus respectivos ids.<br />
    <br />
 
-&nbsp;&nbsp;As funcionalidade para 'Phone' e 'Email' seguem o mesmo padrão, alternando a entidade que irá atuar. Essas são:
+&nbsp;&nbsp;As funcionalidades para 'Phone' e 'Email' seguem o mesmo padrão, alternando a entidade que irá atuar. Essas são:
 - GET /api/v1/phone or email - lista todas as ocorrências de 'Phone' ou 'Email';
 - GET /api/v1/phone or email/:id - lista a ocorrência pelo id;
 - POST /api/v1/phone or email/person/:personId - Cria uma ocorrência para a 'Person' identificada no :personId;
@@ -38,7 +38,7 @@ para o gerenciamento dos dados de pessoas.
   <br /><br />
   <br /><br />
 __Processo:__<br />
-Toda configurção inicial do projeto gerada com o SpringBoot Initializer.<br />
+Toda configuração inicial do projeto foi gerada com o SpringBoot Initializer.<br />
 Utiliza o gerenciador de build e dependências Maven.<br />
 IDE utilizada, IntelliJ.<br />
 <br />

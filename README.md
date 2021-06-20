@@ -30,11 +30,11 @@ para o gerenciamento dos dados de pessoas.
    <br />
 
 &nbsp;&nbsp;As funcionalidades para 'Phone' e 'Email' seguem o mesmo padrão, alternando a entidade que irá atuar. Essas são:
-- GET /api/v1/phone or email - lista todas as ocorrências de 'Phone' ou 'Email';
-- GET /api/v1/phone or email/:id - lista a ocorrência pelo id;
-- POST /api/v1/phone or email/person/:personId - Cria uma ocorrência para a 'Person' identificada no :personId;
-- PUT /api/v1/phone or email/:id/person/:personId - Atualiza a ocorrência pelo seu id para a 'Person' identificada no :personId;
-- DELETE /api/v1/phone or email/:id/person/:personId  - Deleta a ocorrência pelo seu id para a 'Person' identificada no :personId;
+- GET /api/v1/\<phone or email\> - lista todas as ocorrências de 'Phone' ou 'Email';
+- GET /api/v1/\<phone or email\>/:id - lista a ocorrência pelo id;
+- POST /api/v1/\<phone or email\>/person/:personId - Cria uma ocorrência para a 'Person' identificada no :personId;
+- PUT /api/v1/\<phone or email\>/:id/person/:personId - Atualiza a ocorrência pelo seu id para a 'Person' identificada no :personId;
+- DELETE /api/v1/\<phone or email\>/:id/person/:personId  - Deleta a ocorrência pelo seu id para a 'Person' identificada no :personId;
   <br /><br />
   <br /><br />
 __Processo:__<br />

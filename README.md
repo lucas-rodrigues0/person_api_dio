@@ -1,5 +1,5 @@
 # Projeto: Person_Api - Desenvolvendo um sistema de gerenciamento de pessoas em API REST com Spring Boot
-### para o bootcamp GFT start 2 - Digital Innovation One
+### para o bootcamp da Digital Innovation One
 
 <br />
 
